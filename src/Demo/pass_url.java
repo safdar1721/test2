@@ -1,0 +1,17 @@
+package Demo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class pass_url {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		Thread.sleep(2000);
+		//driver.close();
+		driver.quit();
+	}
+
+}
